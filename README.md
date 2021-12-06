@@ -9,3 +9,5 @@ An autoencoder is a special type of neural network that is trained to copy its i
 [Anomaly detection with TensorFlow | Workshop](https://youtu.be/2K3ScZp1dXQ)
 
 https://www.tensorflow.org/tutorials/generative/autoencoder
+
+https://blog.keras.io/building-autoencoders-in-keras.html
