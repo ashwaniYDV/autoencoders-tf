@@ -1,8 +1,24 @@
-# autoencoders-tf
+# Autoencoders
 
-This tutorial introduces autoencoders with three examples: the basics, image denoising, and anomaly detection.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ashwaniYDV/Autoencoders)
 
-An autoencoder is a special type of neural network that is trained to copy its input to its output. For example, given an image of a handwritten digit, an autoencoder first encodes the image into a lower dimensional latent representation, then decodes the latent representation back to an image. An autoencoder learns to compress the data while minimizing the reconstruction error.
+**Autoencoders (AE)** are neural networks that aims to copy their inputs to their outputs. They work by compressing the input into a latent-space representation, and then reconstructing the output from this representation. This kind of network is composed of two parts :
+
+1. **Encoder**: This is the part of the network that compresses the input into a latent-space representation. It can be represented by an encoding function _h=f(x)_.
+2. **Decoder**: This part aims to reconstruct the input from the latent space representation. It can be represented by a decoding function _r=g(h)_.
+
+<img src="https://nathanhubens.github.io/posts/images/autoencoders/AE.png" alt="drawing" width="750"/>
+
+This notebook show the implementation of five types of autoencoders :
+
+* Vanilla Autoencoder
+* Multilayer Autoencoder
+* Convolutional Autoencoder
+* Regularized Autoencoder
+* Variational Autoencoder
+
+The explanation of each (except VAE) can be found [here](https://towardsdatascience.com/deep-inside-autoencoders-7e41f319999f)
+
 
 #### Credits:
 
@@ -10,4 +26,4 @@ An autoencoder is a special type of neural network that is trained to copy its i
 
 https://www.tensorflow.org/tutorials/generative/autoencoder
 
-https://blog.keras.io/building-autoencoders-in-keras.html
+https://towardsdatascience.com/deep-inside-autoencoders-7e41f319999f
